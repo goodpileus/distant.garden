@@ -179,6 +179,10 @@ img {
     max-width:50vw;
   }
 
+  .logo {
+    height:1.7rem;
+  }
+
   .segment {
     /* background:lightyellow; */
     width:100%;
