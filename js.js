@@ -1,17 +1,22 @@
 // based on http://objectmix.com/javascript/37838-simple-sentence-generator-written-javascript.html
 
 var array_list = {
-    container: ["sack", "shovelful", "bowl", "box", "crock", "tub", "bag", "crate", "bucket", "truckload", "bunch", "vat", "pot", "collection", "barrel", "wheelbarrowful"]
-    ,animal: ["gorilla", "aardvaark", "harp seal", "great white shark", "eel", "toad", "wombat", "bee", "beetle", "wasp", "whale", "blue whale", "shark", "lion", "dolphin", "elephant", "worm", "clam", "kitten", "lobster", "angel", "tiger", "leopard", "rabbit", "LARPer", "crocodile", "alligator"]
-    ,adj1: ["certain", "special", "overwhelming", "bad", "laughable", "uncultured", "bizarre", "revolting", "stinking", "cranky", "insipid", "sick", "slimy", "awful", "grotesque", "smelly", "irrational", "unimpressive", "dreadful", "psychotic", "monotonous", "pathetic", "uneducated", "crude", "crooked", "witless", "indecent", "sickening", "drivelling", "illiterate", "offensive", "dimwitted", "deeply disturbing", "uncultured", "repulsive"]
-    ,obj: ["clouds", "apocalypses", "circumstances", "bozos", "toe jam", "ear wax", "zit cheese", "considerations", "floods", "leprosy scabs", "puke lumps", "cow pies", "garbage", "clogs"]
+    animal: ["gorilla", "aardvaark", "harp seal", "eel", "toad", "wombat", "bee", "beetle", "wasp", "orca", "blue whale", "shark", "lion", "dolphin", "elephant", "worm", "clam", "kitten", "angel", "tiger", "leopard", "rabbit", "LARPer", "crocodile", "alligator", "marxist"]
+    ,imprint: ["relaxation", "something", "an echo", "silence", "a window at night"]
+    ,obj: ["certain weather patterns", "certain apocalypses", "certain circumstances", "certain burdens", "certain catastrophes", "psychic despair", "tragic futility"]
+    ,sound: ["a tree growing", "the setting sun", "my eyes staring at a screen", "surrender"]
+    ,weight: ["the atmosphere", "the academy"]
 
     // 'main' is where it all begins.
     ,main: [
-        "<span class='resting'>resting today</span> despite %adj1% %obj%...",
-        "the %animal% is <span class='resting'>resting today</span>...",
-        "resting with care today",
-        "<img src='img/duck.jpg'>"
+        // "<span class='resting'>Resting today</span> despite %adj1% %obj%.",
+        "<span class='resting'>Resting today</span> despite %obj%.",
+        "The %animal% is <span class='resting'>resting today</span>.",
+        "The weight of %weight% lifts a little.",
+        "The imprint of %imprint%.",
+        "The sound of %sound%.",
+        "<img src='img/duck.jpg'>",
+        "<img src='img/frog.jpg'>"
     ]
 }
 

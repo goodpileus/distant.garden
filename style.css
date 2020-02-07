@@ -105,11 +105,18 @@ img {
 
 .resting {
   /* color:green; */
-  cursor:pointer;
+  /* cursor:pointer; */
 }
 
 .resting:hover {
-  color:green;
+  /* color:green; */
+}
+
+.small {
+  font-size: 1.2rem;
+  position: relative;
+  transform: translate(-.5rem, -2.5rem);
+  display: inline-block;
 }
 
 .flashing {
@@ -180,5 +187,10 @@ img {
   .mobile-space {
     display: block;
     margin-top:2rem;
+  }
+
+  .small {
+    font-size: 1rem;
+    transform: translate(-.3rem, -1.4rem);
   }
 }
