@@ -60,6 +60,8 @@ function timer() {
 
 window.onload = function() {
   console.log(':-)');
+
+  document.body.style.opacity = "1";
   newBg();
 }
 
