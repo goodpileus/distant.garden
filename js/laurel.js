@@ -15,8 +15,8 @@ var array_list = {
         "The weight of %weight% lifts a little.",
         "The imprint of %imprint%.",
         "The sound of %sound%.",
-        "<img src='img/duck.jpg'>",
-        "<img src='img/frog.jpg'>"
+        "<img src='img/laurel/duck.jpg'>",
+        "<img src='img/laurel/frog.jpg'>"
     ]
 }
 
@@ -49,6 +49,26 @@ function newBg() {
   $('body').css({
     'background' : randomColor,
   });
+
+  $('.main-wrap').css({
+    'background' : randomColor,
+  });
+}
+
+function newBg2() {
+  var randomColor = '#'+ ('474747' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+
+  $('.main-wrap').css({
+    'background' : randomColor,
+  });
+}
+
+function newBg3() {
+  var randomColor = '#'+ ('474747' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
+
+  $('.back-btn').css({
+    'background' : randomColor,
+  });
 }
 
 var interval = setInterval(timer, 20000);
@@ -56,14 +76,37 @@ var interval = setInterval(timer, 20000);
 function timer() {
   newPhrase();
   newBg();
+  // newBg2();
+  newBg3();
+}
+
+function getContextHeight() {
+  if( $(".mobile-check").css('display') == 'none') {
+    $('.main-wrap').css({
+    'margin-bottom' : $(".context").height() + 32,
+    });
+  } else {
+    $('.main-wrap').css({
+    'margin-bottom' : '1rem',
+    });
+  }
 }
 
 window.onload = function() {
   console.log(':-)');
 
   document.body.style.opacity = "1";
+  $('.context').css({'opacity' : '1',});
   newBg();
+  // newBg2();
+  newBg3();
+  getContextHeight();
+
 }
+
+$( window ).resize(function() {
+  getContextHeight();
+});
 
 // function timer2() {
 //   $('#sentence').css({
