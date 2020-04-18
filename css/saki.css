@@ -59,6 +59,10 @@ body {
   position: relative;
 }
 
+.objects {
+    color: #E632F3;
+}
+
 .first-name {
   font-size: 8rem;
   line-height: 12rem;
@@ -73,6 +77,10 @@ body {
 
 .chino-first {
   left:-6rem;
+}
+
+.objects-first {
+  left:3rem;
 }
 
 .context {
@@ -113,6 +121,16 @@ img {
 
 
 
+@media (min-width:1600px) {
+  body {
+    font-size: 16rem;
+    line-height: 11rem;
+  }
+
+  .first-name {
+    font-size: 12rem;
+  }
+}
 
 @media (max-width:900px) {
 }
