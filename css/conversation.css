@@ -33,26 +33,35 @@ iframe {
   background:rgb(194, 204, 222);
   align-self: center;
   max-width: 100%;
-  width:100%;
+  min-width:100%;
+  box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
 }
 
 .chino {
-  background:#9dc691;
+  background:rgb(156, 198, 144);
   align-self: flex-end;
+  box-shadow: 0px 0px 15px -2px rgb(156, 198, 144);
 }
 
 .saki {
-  background: #cc93d0;
+  background: rgb(204, 147, 208);
+  box-shadow: 0px 0px 15px -2px rgb(204, 147, 208);
 }
 
 .speaker {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   margin-bottom: .5rem;
-  font-style: italic;
+  /* font-style: italic; */
+  font-weight: bolder;
+  position: absolute;
+}
+
+.first-speaker {
+  position: relative;
 }
 
 .text {
-  /* padding-left: 1rem; */
+  padding-left: 1.5rem;
 }
 
 .timestamp {
@@ -75,7 +84,13 @@ iframe {
 
 @media (max-width:900px) {
   body {
-    /* font-size: 6rem; */
-    /* line-height: 3rem; */
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    padding:.8rem;
+  }
+
+  .speech-b {
+    max-width: 80vw;
+    overflow:hidden;
   }
 }
