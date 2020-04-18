@@ -20,6 +20,11 @@ iframe {
   flex-direction: column;
 }
 
+.lead-in {
+  width:100%;
+  height:25vh;
+}
+
 .speech-b {
   background:gray;
   max-width: 60vw;
