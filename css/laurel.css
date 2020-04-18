@@ -65,6 +65,20 @@ img {
   background: #228B23;
 }
 
+.context {
+  flex-direction:row;
+}
+
+.con-split {
+  flex-direction: column;
+}
+
+.con-title {
+  font-family: 'times_dotroman';
+  font-size: 2.5rem;
+  line-height: 2.2rem;
+}
+
 @keyframes flash {
   0% {opacity:1;}
   49% {opacity:1;}
@@ -103,5 +117,9 @@ img {
 
   .right {
     display: none;
+  }
+
+  .context {
+    flex-direction:column;
   }
 }
