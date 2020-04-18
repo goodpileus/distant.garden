@@ -43,7 +43,6 @@ var array_list = {
         "<img src='img/saki/mtukudzi.png'>",
         "<img src='img/saki/potatoblock.png'>",
         "<img src='img/saki/sunra.png'>",
-        "<img src='img/saki/spiral.png'>",
         "<img src='img/saki/bmw.png'>"
     ]
 }

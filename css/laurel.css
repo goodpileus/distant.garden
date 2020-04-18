@@ -84,12 +84,13 @@ img {
 
 @media (max-width:900px) {
   body {
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 
   img {
     max-width: 80vw;
+    max-height: 40vh;
   }
 
   .laurel {
