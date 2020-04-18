@@ -126,14 +126,14 @@ img {
 
 
 
-@media (min-width:1600px) {
+@media (min-width:1700px) {
   body {
-    font-size: 16rem;
-    line-height: 11rem;
+    font-size: 14rem;
+    line-height: 10rem;
   }
 
   .first-name {
-    font-size: 12rem;
+    font-size: 10rem;
   }
 }
 

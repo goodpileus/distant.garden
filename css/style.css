@@ -162,8 +162,8 @@ a {
   position: fixed;
   display: flex;
   bottom:0;
-  font-size: 1.5rem;
-  line-height: 1.7rem;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
   z-index: 0;
   /* width:50%; */
   /* text-align: center; */
@@ -176,14 +176,17 @@ a {
 .con-split {
   padding:1.5rem;
   width:100%;
-  text-align: center;
+  text-align: left;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .con-left {
-  text-align: left;
+}
+
+.con-right {
+  font-size: 1rem;
 }
 
 .split-hover-mobile {
