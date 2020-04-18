@@ -29,7 +29,7 @@ function newBg3() {
 var interval = setInterval(timer, 20000);
 
 function timer() {
-  newPhrase();
+  // newPhrase();
   // newBg();
   // newBg2();
   // newBg3();
@@ -83,46 +83,98 @@ $( window ).resize(function() {
 
 // window.showOutput();
 
+// $(document).ready(function(){
+//
+//   animateDiv();
+//   animateDiv2();
+//
+// });
+//
+// function makeNewPosition(){
+//
+//   // Get viewport dimensions (remove the dimension of the div)
+//   var h = $(window).height() - 50;
+//   var w = $(window).width() - 50;
+//
+//   var nh = Math.floor(Math.random() * h);
+//   var nw = Math.floor(Math.random() * w);
+//
+//   return [nh,nw];
+//
+// }
+//
+// function animateDiv(){
+//   var newq = makeNewPosition();
+//   var oldq = $('.drifter').offset();
+//   var speed = calcSpeed([oldq.top, oldq.left], newq);
+//
+//   $('.drifter').animate({ top: newq[0], left: newq[1] }, speed, function(){
+//     animateDiv();
+//   });
+// }
+//
+// function calcSpeed(prev, next) {
+//
+//   var x = Math.abs(prev[1] - next[1]);
+//   var y = Math.abs(prev[0] - next[0]);
+//
+//   var greatest = x > y ? x : y;
+//
+//   var speedModifier = 0.02;
+//
+//   var speed = Math.ceil(greatest/speedModifier);
+//
+//   return speed;
+//
+// }
+
 $(document).ready(function(){
-
-  animateDiv();
-
+    randomPosition('.a');
+    randomPosition2('.b');
+    randomPosition('.c');
+    randomPosition2('.d');
+    randomPosition('.e');
+    randomPosition2('.f');
+    randomPosition('.spiral1');
+    randomPosition2('.spiral2');
+    animateDiv('.a');
+    animateDiv('.b');
+    animateDiv('.c');
+    animateDiv('.d');
+    animateDiv('.e');
+    animateDiv('.f');
 });
 
 function makeNewPosition(){
 
-  // Get viewport dimensions (remove the dimension of the div)
-  var h = $(window).height() - 50;
-  var w = $(window).width() - 50;
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
 
-  var nh = Math.floor(Math.random() * h);
-  var nw = Math.floor(Math.random() * w);
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
 
-  return [nh,nw];
-
-}
-
-function animateDiv(){
-  var newq = makeNewPosition();
-  var oldq = $('.drifter').offset();
-  var speed = calcSpeed([oldq.top, oldq.left], newq);
-
-  $('.drifter').animate({ top: newq[0], left: newq[1] }, speed, function(){
-    animateDiv();
-  });
-}
-
-function calcSpeed(prev, next) {
-
-  var x = Math.abs(prev[1] - next[1]);
-  var y = Math.abs(prev[0] - next[0]);
-
-  var greatest = x > y ? x : y;
-
-  var speedModifier = 0.02;
-
-  var speed = Math.ceil(greatest/speedModifier);
-
-  return speed;
+    return [nh,nw];
 
 }
+
+function animateDiv(myclass){
+    var newq = makeNewPosition();
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 40000,   function(){
+      animateDiv(myclass);
+    });
+};
+
+function randomPosition(myclass){
+    var randomW = Math.floor(80*Math.random());
+    var randomH = Math.floor(80*Math.random());
+    $(myclass).css({'top' : randomH + '%'});
+    $(myclass).css({'left' : randomW + '%'});
+};
+
+function randomPosition2(myclass){
+    var randomW = Math.floor(80*Math.random());
+    var randomH = Math.floor(80*Math.random());
+    $(myclass).css({'bottom' : randomH + '%'});
+    $(myclass).css({'right' : randomW + '%'});
+};
