@@ -1,7 +1,13 @@
+img {
+  max-width: 40vw;
+  max-height:60vh;
+}
+
 #wrapper {
   display:flex;
   /* flex-direction:column; */
   min-height:100vh;
+  width:100%;
   /* padding:1rem; */
   text-align: center;
 }
@@ -10,6 +16,7 @@
   display:flex;
   flex-direction:column;
   min-height:100vh;
+  width:100%;
   padding:2rem;
   text-align: center;
 }
@@ -52,6 +59,12 @@
   transform: translateY(5px);
 }
 
+.greensquare {
+  width:40vw;
+  height:40vh;
+  background: #228B23;
+}
+
 @keyframes flash {
   0% {opacity:1;}
   49% {opacity:1;}
@@ -60,8 +73,34 @@
   100% {opacity:1;}
 }
 
+
+
+@media (min-width:1700px) {
+  body {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+}
+
 @media (max-width:900px) {
+  body {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  img {
+    max-width: 80vw;
+  }
+
+  .laurel {
+    margin-bottom: 2rem;
+  }
+
   .segment {
     width:100%;
+  }
+
+  .right {
+    display: none;
   }
 }

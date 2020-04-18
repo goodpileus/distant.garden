@@ -130,6 +130,7 @@ a {
 
 .split img {
   max-width: 20vw;
+  /* max-height: 35vh; */
   position: absolute;
   top:50%;
   left:50%;
@@ -141,12 +142,21 @@ a {
   transition:background 2s ease-in-out;
   font-family: 'zhakataregular';
   font-size: 5.4rem;
+  background:black;
+  color: #73F84B;
 }
 
 .split2 {
   font-family: 'times_dotroman';
   transition:background 2s ease-in-out;
 }
+
+.greensquare {
+  width:40vw;
+  height:40vh;
+  background: #228B23;
+}
+
 
 .context {
   position: fixed;
@@ -170,6 +180,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.con-left {
+  text-align: left;
 }
 
 .split-hover-mobile {
@@ -328,21 +342,39 @@ a {
 
   .back-btn {
     /* position: fixed; */
-    height:4rem;
+    height:2.5rem;
     width:100%;
     top:0;
     left:0;
   }
 }
 
+@media (min-width:1700px) {
+  body {
+    font-size: 7rem;
+    line-height: 5.7rem;
+  }
+
+  .split1 {
+    font-size: 7.5rem;
+    /* line-height: 2.8rem; */
+  }
+}
+
+@media (max-width:900px) {
+  .con-left {
+    text-align: center;
+  }
+}
+
 @media (max-width:420px) {
   body {
-    font-size: 2.5rem;
+    font-size: 3rem;
     line-height: 2.8rem;
   }
 
   .split1 {
-    font-size: 2.9rem;
+    font-size: 3.4rem;
     /* line-height: 2.8rem; */
   }
 }

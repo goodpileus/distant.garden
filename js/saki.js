@@ -38,7 +38,7 @@ function timer() {
 function getContextHeight() {
   if( $(".mobile-check").css('display') == 'none') {
     $('.main-wrap').css({
-    'margin-bottom' : $(".context").height() + 32,
+    'margin-bottom' : $(".context").height() + 16,
     });
   } else {
     $('.main-wrap').css({
@@ -56,7 +56,6 @@ window.onload = function() {
   // newBg2();
   // newBg3();
   getContextHeight();
-
 }
 
 $( window ).resize(function() {

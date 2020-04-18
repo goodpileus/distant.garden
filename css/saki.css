@@ -133,4 +133,46 @@ img {
 }
 
 @media (max-width:900px) {
+  body {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  .vert-split {
+    padding:0;
+    flex-direction: column;
+    position: static;
+  }
+
+  .chino {
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+  .saki {
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .first-name {
+    line-height: 5rem;
+    font-size: 4rem;
+    position: static;
+  }
+
+  .chino-first {
+    left:0;
+  }
+
+  .objects {
+    /* display: none;  */
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  img {
+    max-width: 60vw;
+  }
 }

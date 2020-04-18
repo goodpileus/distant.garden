@@ -1,8 +1,13 @@
+// LAUREL RANDOM IMG
+// --------------------------------------------------
 var array_list = {
-    // 'main' is where it all begins.
     main: [
         "<img src='img/laurel/duck.jpg'>",
-        "<img src='img/laurel/frog.jpg'>"
+        "<img src='img/laurel/frog.jpg'>",
+        "<img src='img/laurel/lizard.jpg'>",
+        "<img src='img/laurel/spiral.jpg'>",
+        "<img src='img/laurel/onion.jpg'>",
+        "<img src='img/laurel/bug.jpg'>"
     ]
 }
 
@@ -18,7 +23,6 @@ function getRandomEntry(arrayName) {
     return entry;
 }
 
-
 document.getElementById("laurel-img").innerHTML = [
   getRandomEntry("main")
 ];
@@ -26,6 +30,44 @@ document.getElementById("laurel-img").innerHTML = [
 function newPhrase() {
   document.getElementById("laurel-img").innerHTML = [
     getRandomEntry("main")
+  ];
+}
+
+
+// SAKI RANDOM IMG
+// --------------------------------------------------
+var array_list = {
+    main: [
+        "<img src='img/saki/faka.png'>",
+        "<img src='img/saki/mapfumo.png'>",
+        "<img src='img/saki/mtukudzi.png'>",
+        "<img src='img/saki/potatoblock.png'>",
+        "<img src='img/saki/sunra.png'>",
+        "<img src='img/saki/spiral.png'>",
+        "<img src='img/saki/bmw.png'>"
+    ]
+}
+
+function getRandomEntry2(arrayName) {
+    var ary = array_list[arrayName];
+    if (!ary) return '%' + arrayName + '%';
+
+    var entry = ary[Math.floor(ary.length * Math.random())];
+    entry = entry.replace(/%([^%]+)%/g, function (m) {
+        var aname = m.replace(/^%|%$/g,'');
+        return getRandomEntry2(aname);
+    });
+    return entry;
+}
+
+
+document.getElementById("saki-img").innerHTML = [
+  getRandomEntry2("main")
+];
+
+function newPhrase2() {
+  document.getElementById("saki-img").innerHTML = [
+    getRandomEntry2("main")
   ];
 }
 
@@ -63,7 +105,7 @@ function newBg3() {
 var interval = setInterval(timer, 20000);
 
 function timer() {
-  newBg();
+  // newBg();
   newBg2();
   // newBg3();
 }
@@ -97,7 +139,7 @@ window.onload = function() {
 
   document.body.style.opacity = "1";
   $('.context').css({'opacity' : '1',});
-  newBg();
+  // newBg();
   newBg2();
   // newBg3();
   getContextHeight();
