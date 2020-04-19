@@ -12,6 +12,10 @@ a {
   text-decoration: underline;
 }
 
+a:hover {
+  color:white;
+}
+
 #wrapper {
   display:flex;
   /* flex-direction:column; */
@@ -244,7 +248,7 @@ img {
 
   .con-split {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   img {

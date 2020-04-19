@@ -397,7 +397,7 @@ a {
 
   .con-split {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
 
   .desk-title {
