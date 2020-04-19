@@ -26,6 +26,11 @@ img {
 a {
   color:white;
   text-decoration: underline;
+  transition: color .3s ease;
+}
+
+a:hover {
+  color:black;
 }
 
 .bold {
