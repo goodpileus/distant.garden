@@ -136,8 +136,14 @@ img {
   justify-content: space-between;
   align-items: center;
   font-size: 1.3rem;
-  padding:1.3rem;
+  /* padding:1.3rem; */
+  height:3rem;
   z-index: 1;
+  transition: background .3s ease;
+}
+
+.chat-head:hover {
+  background:rgb(194, 204, 222);
 }
 
 .chat-fill {
@@ -186,7 +192,7 @@ img {
 }
 
 .top-btn:hover {
-  background:rgb(156, 198, 144);
+  background:rgb(194, 204, 222);
 }
 
 @media (min-width:1600px) {

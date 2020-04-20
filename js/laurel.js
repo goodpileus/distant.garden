@@ -87,18 +87,6 @@ function timer() {
   newBg3();
 }
 
-function getContextHeight() {
-  if( $(".mobile-check").css('display') == 'none') {
-    $('.main-wrap').css({
-    'margin-bottom' : $(".context").height() + 16,
-    });
-  } else {
-    $('.main-wrap').css({
-    'margin-bottom' : '1rem',
-    });
-  }
-}
-
 window.onload = function() {
   console.log(':-)');
 
@@ -107,12 +95,24 @@ window.onload = function() {
   newBg();
   // newBg2();
   newBg3();
-  getContextHeight();
+  // getContextHeight();
 }
 
-$( window ).resize(function() {
-  getContextHeight();
-});
+// function getContextHeight() {
+//   if( $(".mobile-check").css('display') == 'none') {
+//     $('.main-wrap').css({
+//     'margin-bottom' : $(".context").height() + 16,
+//     });
+//   } else {
+//     $('.main-wrap').css({
+//     'margin-bottom' : '1rem',
+//     });
+//   }
+// }
+
+// $( window ).resize(function() {
+//   getContextHeight();
+// });
 
 // function timer2() {
 //   $('#sentence').css({

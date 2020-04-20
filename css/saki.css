@@ -99,30 +99,7 @@ a:hover {
 
 .context {
   color: #E632F3;
-  flex-direction: column;
-}
-
-.con-split {
-  padding:0;
-  width:100%;
-  text-align: left;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-.con-segment{
-  padding:1.5rem;
-  width:100%;
-}
-
-.con-left {
-}
-
-.con-right {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  /* flex-direction: column; */
 }
 
 .con-title {
@@ -262,7 +239,7 @@ img {
     position: static;
   }
 
-  .saki-mobile {
+  .saki-first-mobile {
     /* display: none;  */
     position:absolute;
     top:4rem;
@@ -270,7 +247,7 @@ img {
     /* transform:translate(-50%, -50%); */
   }
 
-  .chino-mobile {
+  .chino-first-mobile {
     /* display: none;  */
     position:absolute;
     bottom:4rem;

@@ -86,18 +86,9 @@ function newBg2() {
     'background' : randomColor,
   });
 
-  $('body').css({
-    'background' : randomColor,
-  });
-}
-
-function newBg3() {
-  var randomColor = '#'+ ('474747' + Math.floor(Math.random()*16777215).toString(16)).slice(-6);
-
-
-  $('body').css({
-    'background' : randomColor,
-  });
+  // $('body').css({
+  //   'background' : randomColor,
+  // });
 }
 
 var interval = setInterval(timer, 20000);
@@ -108,17 +99,17 @@ function timer() {
   // newBg3();
 }
 
-function getContextHeight() {
-  if( $(".mobile-check").css('display') == 'none') {
-    $('.main-wrap').css({
-    'margin-bottom' : $(".context").height() + 16,
-    });
-  } else {
-    $('.main-wrap').css({
-    'margin-bottom' : '1rem',
-    });
-  }
-}
+// function getContextHeight() {
+//   if( $(".mobile-check").css('display') == 'none') {
+//     $('.main-wrap').css({
+//     'margin-bottom' : $(".context").height() + 16,
+//     });
+//   } else {
+//     $('.main-wrap').css({
+//     'margin-bottom' : '1rem',
+//     });
+//   }
+// }
 
 $(".split-hover").hover(function(){
   $(this).parent().toggleClass('hover');
@@ -140,12 +131,12 @@ window.onload = function() {
   // newBg();
   newBg2();
   // newBg3();
-  getContextHeight();
+  // getContextHeight();
 
 }
 
 $( window ).resize(function() {
-  getContextHeight();
+  // getContextHeight();
 });
 
 // $(".note").html("context height: " + $(".context").height());
