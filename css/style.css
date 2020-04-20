@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'times_dotroman';
+  font-family: 'times_dotroman', serif;
   font-size:5rem;
   line-height: 4.5rem;
 
@@ -81,7 +81,7 @@ a:hover {
   position: absolute;
   text-align: center;
   width:100%;
-  font-family: 'times_dotroman';
+  font-family: 'times_dotroman', serif;
   font-size: 5rem;
 }
 
@@ -150,14 +150,14 @@ a:hover {
 
 .split1 {
   transition:background 2s ease-in-out;
-  font-family: 'zhakataregular';
+  font-family: 'zhakataregular', serif;
   font-size: 5.4rem;
   background:black;
   color: #73F84B;
 }
 
 .split2 {
-  font-family: 'times_dotroman';
+  font-family: 'times_dotroman', serif;
   transition:background 2s ease-in-out;
 }
 
@@ -200,7 +200,7 @@ a:hover {
 }
 
 .con-title {
-  font-family: 'zhakataregular';
+  font-family: 'zhakataregular', serif;
   font-size: 3rem;
   line-height: 2.8rem;
   padding-bottom:1rem;

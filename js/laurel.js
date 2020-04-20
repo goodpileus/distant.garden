@@ -58,6 +58,10 @@ function newBg() {
   $('.main-wrap').css({
     'background' : randomColor,
   });
+
+  $('.soon').css({
+    'color' : randomColor,
+  });
 }
 
 function newBg2() {
