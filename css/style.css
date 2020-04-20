@@ -223,9 +223,6 @@ a:hover {
   justify-content: center;
 }
 
-.con-left {
-}
-
 .con-credit {
   /* background:green; */
   font-size: 1rem;
@@ -305,6 +302,36 @@ a:hover {
   background:rgb(216, 236, 227);
 }
 
+.gdes-logo {
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  display: block;
+  background: black;
+  width:50px;
+  height:50px;
+  /* position: absolute;
+  right:0;
+  top:0; */
+  transition: background .3s ease;
+}
+
+.gdes-logo:hover {
+  background:white;
+}
+
+.gdes-logo:hover path{
+  fill:black;
+}
+
+.gdes-logo svg{
+  max-width:50px;
+  max-height:50px;
+}
+
+.gdes-logo path {
+
+  transition: fill .3s ease;
+}
 
 @font-face {
   font-family: 'times_dotroman';
