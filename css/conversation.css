@@ -33,6 +33,38 @@ img {
   height: 20vh;
 }
 
+.divider {
+  /* max-width: 48rem; */
+  /* min-width: 15rem; */
+  padding: 1rem;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+  align-self: center;
+  text-align: center;
+
+  background: black;
+  box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
+  color:rgb(194, 204, 222);
+}
+
+.saki-name {
+  color: rgb(204, 147, 208);
+}
+
+.chino-name {
+  color: rgb(156, 198, 144);
+}
+
+.date {
+  font-size:.8rem;
+  margin:3rem 0;
+}
+
+.end {
+  margin-top: 3rem;
+}
+
 .speech-b {
   max-width: 48rem;
   min-width: 15rem;
@@ -41,10 +73,10 @@ img {
   margin-bottom: 1rem;
   position: relative;
 
-    background: black;
-    /* background:rgb(194, 204, 222); */
-    box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
-    color:rgb(194, 204, 222);
+  background: black;
+  /* background:rgb(194, 204, 222); */
+  box-shadow: 0px 0px 15px -2px rgb(194, 204, 222);
+  color:rgb(194, 204, 222);
 }
 
 .nontsi {
