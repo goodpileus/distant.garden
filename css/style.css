@@ -50,7 +50,7 @@ a:hover {
   z-index:1;
   width:100%;
   height:100%;
-  /* background:red; */
+  background:white;
   text-align: center;
   /* align-items: center; */
   /* justify-content: space-between; */
@@ -138,6 +138,10 @@ a:hover {
   text-decoration: none;
 }
 
+.saki-mobile:hover {
+  color:white;
+}
+
 .split img {
   max-width: 20vw;
   /* max-height: 35vh; */
@@ -181,7 +185,7 @@ a:hover {
     font-family: 'IBM Plex Sans', sans-serif;
   /* margin-top: 110vh; */
   opacity: 0;
-  transition:opacity 10s ease;
+  transition: opacity 1s ease;
 }
 
 .con-split {

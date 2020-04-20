@@ -89,7 +89,8 @@ a:hover {
 }
 
 .objects-first {
-  left:3rem;
+  position: relative;
+  left:-3rem;
 }
 
 .context {
@@ -244,6 +245,20 @@ img {
     top:50%;
     left:50%;
     transform:translate(-50%, -50%);
+  }
+
+  .saki-mobile {
+    /* display: none;  */
+    position:absolute;
+    top:4rem;
+    /* left:50%; */
+    /* transform:translate(-50%, -50%); */
+  }
+
+  .chino-mobile {
+    /* display: none;  */
+    position:absolute;
+    bottom:4rem;
   }
 
   .con-split {

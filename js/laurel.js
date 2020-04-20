@@ -19,9 +19,7 @@ var array_list = {
         "<img src='img/laurel/frog.jpg'>",
         "<img src='img/laurel/lizard.jpg'>",
         "<img src='img/laurel/spiral.jpg'>",
-        "<img src='img/laurel/onion.jpg'>",
-        "<img src='img/laurel/bug.jpg'>",
-        "<div class='greensquare'></div>"
+        "<img src='img/laurel/bug.jpg'>"
     ]
 }
 
