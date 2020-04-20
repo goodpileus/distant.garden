@@ -443,6 +443,14 @@ a:hover {
     text-align: left;
   }
 
+  .con-left {
+    text-align: center;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
   .desk-title {
     display: none;
   }
@@ -469,12 +477,6 @@ a:hover {
   .split1 {
     font-size: 7.5rem;
     /* line-height: 2.8rem; */
-  }
-}
-
-@media (max-width:900px) {
-  .con-left {
-    text-align: center;
   }
 }
 
