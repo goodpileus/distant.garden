@@ -133,6 +133,11 @@ img {
   position:fixed;
 }
 
+.quote {
+  padding-left: 1rem;
+  font-style: italic;
+}
+
 @keyframes flash {
   0% {opacity:1;}
   49% {opacity:1;}
