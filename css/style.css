@@ -568,4 +568,15 @@ a:hover {
     font-size: 3.4rem;
     /* line-height: 2.8rem; */
   }
+
+  .smaller {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  .even-smaller {
+    font-size: .8rem;
+    bottom:.14rem;
+    /* left:; */
+  }
 }
